@@ -1,0 +1,24 @@
+.myfield{
+  width:100%;
+.mycontrol{
+  display:flex;
+  width:100%;
+  justify-content:space-between;
+  .myinput{
+    border-radius: 5px;
+    padding:5px;
+    margin:5px;
+    width:100%;
+    font-size: 26px;
+    box-shadow:inset 1px 2px 10px 1px black;
+  }
+  .myarea{
+      border-radius: 5px;
+    width:100%;
+    margin:5px;
+    font-size: 24px;
+      padding:5px;
+    box-shadow:inset 1px 2px 10px 1px black;
+  }
+}
+}

@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+body{
+  overflow: hidden;
+  display:flex;
+  justify-content: center;
+  background:#14131C;
+  height:100vh;
+    padding: 25px;
+
+#root{
+  background:#373459;
+  width:90vw;
+  height:90vh;
+  display:flex;
+  padding: 5px;
+  flex-direction: column;
+  box-shadow:inset 2px 2px 15px 2px #707486;
+
+  .headtop{
+    display:flex;
+
+    .heading{
+      font-family: 'Righteous', cursive;
+      display:flex;
+      background:rgb(187, 19, 51);
+      color:black;
+      width:100%;
+      box-shadow:inset 1px 2px 15px 1px black;
+      flex-basis:flex-end;
+      padding:10px;
+      border:1px inset black;
+      font-size: 44px;
+      text-shadow:1px 1px 12px #ff7f86;
+      padding-left:150px;
+
+    }
+
+}
+.phone{
+  display:none;
+}
+
+
+.web{
+  display:flex;
+}
+@media screen and (max-width: 700px) {
+  *{
+
+    font-size: 18px;
+  }
+  body{
+
+  }
+  .container{
+  position:relative;
+  margin-top:15px;
+  z-index: 20;
+  }
+
+
+  .phone {
+    display:block;
+      background:rgb(187, 19, 51);
+  }
+  .web{
+    display:none;
+    z-index: 100;
+    a.page-link{
+      z-index: 100;
+    }
+  }
+  form input.myimput{
+    font-size: 16px;
+  }
+  #input{
+    font-size: 14px;
+  }
+  textarea.myarea{
+    width:65vw;
+  }
+
+  .lheader{
+    position: absolute;
+    top:1px;
+    margin-bottom:0;
+    z-index: 12
+  }
+}
+  // align-items: center;
+}
+}
+.main-header{
+  font-size: 36px;
+  color:white;
+}
+.SectionComponent {
+      background:#373459;
+      color:rgba(185,185,185,1);
+
+      h1{
+        color:white;
+      }
+  .is-white + &.is-white {
+    border-top: 1px solid #383651;
+  }
+}
+
+.SectionHeader {
+  // Add bottom margin if element below
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  &__no-classname {
+
+    max-width: 700px;
+
+    display: inline-block;
+  }
+}
+
+.Auth {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+
+  &__bottom-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    a {
+      margin: 0 0.5rem;
+    }
+  }
+}
+
+.mycard{
+  background:#383651;
+  max-height:50vh;
+}
+.container{
+  position: relative;
+      background:#383651;
+      border-radius: 8px;
+      height:100%;
+      min-height:35vh;
+      padding:8px;
+    top:50px;
+      box-shadow:inset 2px 1px 12px 1px  #14131C;
+}
+nav.navbar {
+    background:#383651;
+}
+p.card-header-title{
+  width:80%;
+  height:10vh;
+}
+div.navbar-menu {
+    background:#707486;
+
+}
+a.page-link{
+  padding:20px;
+  z-index: 10;
+  &:hover{
+    color:white;
+  }
+}
+// .bground{
+//   display:none;
+//   width:25px;
+// }
+.bground{
+  opacity: .05;
+  position:absolute;
+  max-height:300px;
+  z-index: 0;
+}
+
+.bgimg{
+  max-height:500px;
+  left:0px;
+  width:100vw;
+}
+
+.sectionbutton{
+  border-radius:6px;
+  margin:5px;
+  padding:5px;
+  background:#66F2FF;
+      box-shadow:inset 2px 1px 12px 1px  #14131C;
+}
+$primary: #00d1b2;
+$info: #209CEE;
+$success: #23D160;
+$warning: #FFDD57;
+$danger: #FF3860;
+$light: #F5F5F5;
+$dark: #363636;
+
+$text: #222222;
+$link: #3273DC;
+$body-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$title-family: false;
+$button-family: false;
+
+$gap: 32px;
+$tablet: 769px;
+$desktop: 960px + (2*$gap);
+$widescreen: 1152px + (2*$gap);
+$fullhd: 1344px + (2*$gap);
+$widescreen-enabled: true;
+$fullhd-enabled: false;
+
+$section-padding: 3rem 1.5rem;
+$section-padding-medium: 6rem 1.5rem;
+$section-padding-large: 9rem 1.5rem;
+
+// IMPORT BULMA
+@import "~bulma/bulma.sass";
+
+#icons{
+  display:flex;
+  height:85px;
+  width:100%;
+  width:100%;
+  justify-content: space-between;
+  position:relative;
+
+}
+
+.image{
+  max-width:75px;
+  max-height:75px;
+}
+
+.mainimg{
+  height:80vh;
+  width:90vw;
+  margin-top:-50px;
+  padding:-50px -50px -50px -50px;
+  opacity:.1;
+  z-index: -1;
+}
+.main-area{
+  height:80vh;
+  display:flex;
+  padding:100px;
+}
+#hpage{
+  background:url('./../assets/home.png');
+  z-index: 5000
+}
+#phone{
+top:150px;
+}
+
+#phonenav{
+  max-height:85px;
+}
